@@ -1,0 +1,43 @@
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.egg-info/
+*.egg
+venv/
+ENV/
+env/
+
+# ------------------------
+# Logs
+# ------------------------
+*.log
+
+# ------------------------
+# OS / Editor
+# ------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ------------------------
+# Terraform
+# ------------------------
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# ------------------------
+# Kubernetes / Istio / Helm
+# ------------------------
+*.kubeconfig
+*.crt
+*.key
+charts/
+release.yaml
