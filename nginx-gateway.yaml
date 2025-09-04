@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: nginx-gateway
+  namespace: demo-namespace   # nginx draait bij jou in demo-namespace
+spec:
+  selector:
+    istio: ingress            # dit matcht met de istio-ingress service
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
